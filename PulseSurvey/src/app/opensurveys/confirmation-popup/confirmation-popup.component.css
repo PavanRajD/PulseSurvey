@@ -1,0 +1,39 @@
+.nav1 {
+    height: 55px;
+    background: rgb(84,86,105);
+  }
+  .close-button {
+    float: right;
+    margin-right: 3%; 
+    padding-top: 2.5%;
+    border: none;
+    background-color: rgb(84,86,105);
+    outline: none;
+    color:white;
+  }
+  .heading {
+    display: inline-block;
+    font-size: 20px;
+    padding-top:2%;
+    color: #ffffff;
+    margin-left: 20px;
+    vertical-align: super;
+  }
+  p{
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  .mat-dialog-actions{
+    float:right;
+    margin-top:20px;
+  }
+  .btn{
+    border :2px solid rgb(84,86,105);
+    padding-right:30px;
+    padding-left: 30px;
+    margin-right:25px;
+  }
+  .yes{
+    color:white;
+    background-color: rgb(84,86,105);
+  }

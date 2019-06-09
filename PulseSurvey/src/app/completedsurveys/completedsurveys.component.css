@@ -1,0 +1,47 @@
+.completed-surveys{
+    margin-left:20px;
+    margin-top:40px;
+    margin-right: 20px;
+}
+h6{
+    opacity: 0.5;
+}
+.navi{
+    display: flex;
+}
+.select-list{
+    border: 2px solid rgb(220, 221, 226);
+    padding-top:17px;
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-bottom:15px;
+    background-color: white;
+}
+.search-middle{
+    flex-grow: 1;
+    border: 2px solid rgb(220, 221, 226);
+    border-left: none;
+    background-color: white ;
+}
+.fa{
+    padding-left: 10px;
+    padding-right: 15px;
+    color: rgb(190, 190, 190);
+}
+input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width:90%;
+    border: none;
+    outline:none;
+    border-right: 2px solid rgb(220, 221, 226);
+}
+button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right:20px;
+    padding-left:0px;
+    outline:none;
+    background-color:white;
+    border:none;
+}

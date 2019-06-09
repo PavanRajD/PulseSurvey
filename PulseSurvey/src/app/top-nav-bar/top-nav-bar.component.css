@@ -1,0 +1,145 @@
+.navi {
+  height: 50px;
+  background: #76618B;
+}
+
+.logo {
+  background: #534461;
+  width: 100px;
+  height: 50px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.heading {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 15px;
+  vertical-align: super;
+}
+
+.right {
+  float: right;
+  height: 50px;
+}
+
+.search {
+  display: inline-block;
+}
+
+  .search input {
+    background: #645275;
+    border: none;
+    height: 36px;
+    margin: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+    .search input:focus {
+      outline: none;
+    }
+
+    .search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #B2A9BA;
+      opacity: 1; /* Firefox */
+    }
+
+    .search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #B2A9BA;
+    }
+
+    .search input::-ms-input-placeholder { /* Microsoft Edge */
+      color: #B2A9BA;
+    }
+
+.search-icon {
+  display: none;
+  /* display: inline-block; */
+  vertical-align: middle;
+}
+
+  .search-icon img {
+    display: inline-block;
+  }
+
+.date {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 14px;
+  color: white;
+  font-weight: lighter;
+}
+
+.sun-logo {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: sub;
+}
+
+.name {
+  display: inline-block;
+  color: white;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+.avatar {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+  .avatar img {
+    border-radius: 50%;
+    height: 32px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+
+
+/* 634 */
+@media only screen and (max-width: 773px) {
+  .date {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 634px) {
+  .sun-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 597px) {
+  .name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .search {
+    display: none;
+  }
+
+  .search-icon {
+    display: inline-block;
+  }
+
+    .search-icon img {
+      margin-top: 12px;
+    }
+
+  .avatar {
+    margin-top: 7px;
+  }
+}

@@ -1,0 +1,46 @@
+.close-button{
+    background-color:rgb(84, 86, 105);
+    border:none;
+    margin-bottom:3%;
+}
+i{
+    padding-top:1%;
+    color:rgb(158, 159, 167);
+}
+ .top-margin
+ {
+     margin-top:5%;
+}
+ .content{
+     padding-left:4%;
+}
+ nav
+ {
+     height:50px;
+}
+ .mat-dialog-title{
+     padding:0px;
+}
+ .head{
+    margin:0px;padding:0px;
+     display:flex;
+     background-color:rgb(84, 86, 105);
+     padding-top:1.5%;
+     padding-left:4%;
+     color:white;
+} 
+.inline{
+    padding:0px;
+    width:550px;
+    height:450px;   
+} 
+button{
+    outline:none; 
+}
+.less-opacity{
+    opacity: 0.5;
+}
+.mat-dialog-actions{
+    float:right;
+    margin-right:3%;
+}

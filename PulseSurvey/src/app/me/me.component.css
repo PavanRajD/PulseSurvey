@@ -1,0 +1,35 @@
+.me{
+    background-color:white;
+    height:100%;
+}
+
+.navbar{
+  border-bottom:.1px rgb(240, 241, 243) solid;
+  padding-bottom: .5%;
+  padding-top: 0.9%;
+}
+.items{
+    display:flex;
+    display:inline; 
+    padding-right: 25px;
+}
+a{
+  text-decoration: none;
+  color:black;
+  text-transform: uppercase; 
+  font-size: 15px;  
+}
+.active {
+  position: relative;
+  font-weight: 600;
+}
+.active:after{
+content: " ";
+border-left: 7px solid transparent;
+border-right: 7px solid transparent;
+border-bottom: 7px solid rgb(207, 205, 205);
+position: absolute;
+display: block;
+top: 120%;
+left: 40%;
+}

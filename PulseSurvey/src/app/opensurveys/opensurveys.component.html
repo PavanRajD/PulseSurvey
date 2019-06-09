@@ -1,0 +1,43 @@
+<div class="opensurveys">
+    <h2>Open Pulse Surveys</h2>
+    <h6>Here you can see the active pulse surveys that you are yet to submit</h6>
+    <table class="table table-bordered col-lg-12">
+      <col width="615px">
+      <col width="182px">
+      <col width="189px">
+      <col width="140px">
+      <thead>
+        <tr>
+        <th>
+          survey title
+        </th>
+        <th>
+          expires on
+        </th>
+        <th>
+          launched  on
+        </th>
+        <th>
+          actions
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let details of surveyDetailsList">
+          <td>
+            {{details.surveyTitle}}
+           <p>{{details.surveyDescription}}</p>
+          </td>
+          <td>
+            {{details.expiresOn}}
+          </td>
+          <td>
+            {{details.launchedOn}}
+            <p>by {{details.createdBy}}</p>
+          </td>
+          <td>
+            <a style="color: #76618B;cursor:pointer" (click)="openDialog()">Take Survey</a>
+          </td>
+      </tbody>
+    </table>
+</div>

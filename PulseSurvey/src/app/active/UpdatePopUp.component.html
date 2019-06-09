@@ -1,0 +1,23 @@
+<div class="inline">
+    <nav class="head"><h2 style="flex-grow:0.9" mat-dialog-title>Update Survey</h2>
+    <button class="close-button"  mat-dialog-close><i class="fa  fa-times" aria-hidden="true"></i></button></nav>
+    <div class="content">
+    <mat-dialog-content>
+       <p class="top-margin less-opacity">note:you can't update the question here</p>
+       <h6 class="top-margin less-opacity">title of the survey</h6>
+       <input class="text-input form-control" type="text" value="Employee Experience">
+       <h6 class="top-margin less-opacity">Description</h6>
+       <textarea class="form-control" rows="3" cols="55">
+          dummy data inside this  
+       </textarea>
+       <h6 class="top-margin">survey expires on</h6>
+       <input type="date">
+    </mat-dialog-content>
+  
+    <mat-dialog-actions>
+      <button mat-button mat-dialog-close>cancel</button>
+     
+      <button mat-button [mat-dialog-close]="true">Update</button>
+    </mat-dialog-actions>
+    </div>
+</div>

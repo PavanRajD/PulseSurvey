@@ -1,0 +1,22 @@
+.opensurveys{
+    margin-left: 40px;
+    margin-top:40px;
+    margin-right:1%;
+}
+th{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #333333;
+}
+p{
+  opacity:0.5;
+}
+h6{
+  opacity:0.5;
+}
+tbody{
+  background-color:white;
+}
+table{
+  margin-top: 30px;
+}

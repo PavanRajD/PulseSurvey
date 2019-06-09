@@ -1,0 +1,20 @@
+<div class="questions-survey form-group">
+    <div class="question" *ngFor="let question of questions;let i = index">
+        <p>{{i+1}}. {{question.questionName}}</p>
+        <h6>Response Type:{{question.questionType}}</h6>
+        <div *ngIf="question.questionType==='text'">
+           <textarea placeholder="Enter your response and provide your concerns about the question.." class="col-lg-8 form-control" rows="3"></textarea>
+        </div>
+        <div *ngIf="question.questionType==='rating'">
+             <div class="flex"><h6 style="display: inline;opacity: 0.7;">Provide your rating:  </h6>  
+                <button class="btn" *ngFor="let i of [3,4,5,6,7,8,9,10]">{{i}}</button>
+             </div>
+        </div>
+        <div *ngIf="question.questionType==='selectOneFromList'">
+                <select class="select-list">
+                    <option disabled selected>Select</option>
+                    <option *ngFor="let option of question.options" value="option">{{option}}</option>
+                </select>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="nav1">
+  <div class="heading">Take Survey</div>
+  <button class="close-button" mat-dialog-close><i class="material-icons">
+      close
+      </i></button>
+</div>
+<div class="nav2">
+  <div class="heading2">
+    <a id="page1" (click)="onClick(1)" >1</a><label for="page1">Details</label>
+    <a id="page2" (click)="onClick(2)">2</a><label for="page2">survey questions</label>
+  </div>
+  <div class="right" *ngIf="step===1">
+    <button (click)="onClick(2)" class="btn">Continue</button>
+  </div>
+  <div class="right" *ngIf="step===2">
+    <button class="btn" (click)="openPopup()">Submit</button>
+  </div>
+  <div class="right" *ngIf="step===2">
+    <button class="btn basic"  (click)="onClick(1)" >Back</button>
+  </div>
+</div>
+<mat-dialog-content>
+  <div *ngIf="step===1" class="body-part">
+    <h2>{{survey.surveyTitle}}</h2>
+    <p>
+      {{survey.surveyDescription}}
+    </p>
+    <h6 style="margin-bottom:15px;">Other Details</h6>
+    <div class="flex">
+      <div style="flex-grow:0.1;">
+        <h6 style="font-weight:300;opacity:0.8;">Expires On</h6>
+        {{survey.expiresOn}}
+      </div>
+      <div  style="flex-grow:0.1;">
+        <h6 style="font-weight:300;opacity:0.8;">Questions</h6>
+        <p>3</p>
+      </div>
+      <div>
+        <h6 style="font-weight:300;opacity:0.8;">survey Type</h6>
+        Anonymous
+      </div>
+    </div>
+  </div>
+  <div *ngIf="step===2">
+       <app-survey-questions></app-survey-questions>
+  </div>
+</mat-dialog-content>

@@ -1,0 +1,33 @@
+.active {
+    margin-left: 20px;
+    padding-top:2%;
+    height:100%;
+    margin-right:1%;
+}
+.flex{
+    display:flex;
+}
+.left-content{  
+    flex-grow:.9;
+}
+.btn{
+    background-color: rgb(118,97,139);
+}
+.btn:hover{
+    background-color: rgb(87,67,97);
+    padding:4%;
+}
+tbody{
+    background-color: white;
+}
+.table-button{
+    background-color: white;
+    align-content: center;
+    border: none;
+}
+.mat-menu-item{
+    border-color:white;
+}
+button{
+    outline:none;
+}

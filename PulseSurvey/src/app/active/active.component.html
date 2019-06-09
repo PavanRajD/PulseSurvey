@@ -1,0 +1,63 @@
+<div class="active">
+<div class="flex">
+  <div class="left-content">
+     <h2>Active Pulse Surveys</h2>
+     <h6>here you can view and manage active pulse surveys</h6>
+  </div>
+  <div>
+     <button class="btn btn-primary">Launch new survey</button>
+  </div>
+</div>
+<div>
+      <table class="table table-bordered col-lg-12">
+          <col width="540px">
+          <col width="140px">
+          <col width="150px">
+          <col width="200px">
+          <col width="90px">
+        <thead>
+          <tr>
+          <th>
+            survey title
+          </th>
+          <th>
+            completion
+          </th>
+          <th>
+            expires on
+          </th>
+          <th>
+            launched on
+          </th>
+          <th>
+            actions
+          </th>
+        </tr>
+        </thead>
+      <tbody>
+           <tr>
+             <td>
+               <h6>employee pulse dummy</h6>
+               <p>dummy employee pulse data taken inside this</p>
+             </td>
+             <td>
+                <p>65%</p>
+             </td>
+             <td>
+               <p>Jun 12,2018</p>
+             </td>
+             <td>
+               <p>Jun 11,2014</p>
+             </td>
+             <td>
+                <button mat-button [matMenuTriggerFor]="menu" class="table-button"><i class="fa fa-ellipsis-h"></i></button>
+                   <mat-menu #menu="matMenu">
+                     <button (click)="openDialog()" mat-menu-item>Update</button>
+                     <button (click)="openDialog()" mat-menu-item>Close</button>
+                   </mat-menu>
+             </td>
+           </tr>
+      </tbody>
+    </table>
+</div>
+</div>

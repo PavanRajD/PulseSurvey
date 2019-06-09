@@ -1,0 +1,15 @@
+<div class="me">
+  <nav class="navbar navbar-default"><span>
+      <div class="items">
+         <a [routerLink]="['./opensurveys']" routerLinkActive="active">
+             Open Surveys
+         </a>
+      </div>
+     <div class="items">
+         <a [routerLink]="['./completedsurveys']" routerLinkActive="active">
+             Completed Surveys
+         </a>
+     </div></span>
+  </nav>
+</div>
+<router-outlet></router-outlet>

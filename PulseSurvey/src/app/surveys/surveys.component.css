@@ -1,0 +1,19 @@
+.survey-items{
+    background-color: white;
+}
+.navbar{
+  border-bottom:.1px rgb(240, 241, 243) solid;
+}
+.items{
+    display:flex;
+    display:inline; 
+    padding-right: 25px;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+.active{
+  padding-bottom: 6px;
+   border-bottom: 3px solid rgb(118,97,139);
+}
